@@ -1,0 +1,14 @@
+.container {
+	flex-grow: 6;
+}
+
+.lista {
+	display: flex;
+	gap: 30px;
+	padding: 0;
+	justify-content: space-between;
+	justify-content: center;
+	align-items: center;
+	list-style: none;
+	flex-grow: 6;
+}

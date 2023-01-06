@@ -1,0 +1,63 @@
+.card {
+	display: flex;
+	flex-direction: column;
+	margin: 0 25px 40px;
+	width: 385px;
+}
+
+.category {
+	color: burlywood;
+	font-family: Varela Round, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	margin-right: 10px;
+}
+
+.desciption {
+	display: flex;
+	font-family: Varela Round, Arial, Helvetica, sans-serif;
+	font-size: 15px;
+	font-weight: 400;
+	justify-content: center;
+	line-height: 24px;
+	margin-top: 15px;
+	overflow: hidden;
+}
+
+.hr {
+	border: 0;
+}
+
+.images {
+	align-items: center;
+	display: flex;
+	border-radius: 7px;
+	display: flex;
+	height: 280px;
+	width: 375px;
+}
+
+.info {
+	display: flex;
+	justify-content: center;
+	margin-top: 4px;
+}
+
+.title {
+	display: flex;
+	font-family: Josefin Sans, Arial, Helvetica, sans-serif;
+	font-size: 24px;
+	font-weight: 900px;
+	justify-content: center;
+	margin-top: 14px;
+}
+
+.time {
+	color: #999;
+	display: flex;
+	font-family: Lora, serif;
+	font-style: italic;
+	font-weight: 400;
+	font-size: 14px;
+	justify-content: center;
+	margin-top: 10px;
+}

@@ -1,0 +1,45 @@
+.container {
+	display: flex;
+	flex-direction: row;
+	margin-top: 50px;
+}
+
+.detail {
+	color: #be9656;
+	display: flex;
+	flex: 3;
+	font-family: Varela Round, Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	justify-content: space-between;
+	margin-bottom: 20px;
+}
+.entremedio {
+	padding: 20px 0 20px 20px;
+}
+.image {
+	border-radius: 5px;
+	height: 300px;
+	object-fit: cover;
+	width: 100%;
+}
+.parrafo {
+	color: #666;
+	font-size: 18px;
+	line-height: 25px;
+}
+.parrafo:first-letter {
+	font-size: 30px;
+	font-weight: 600;
+	margin-left: 20px;
+}
+.sidebar {
+	display: flex;
+	flex: 1;
+}
+.title {
+	color: black;
+	font-family: Lora, sans-serif;
+	font-size: 28px;
+	text-align: center;
+	margin: 10px;
+}

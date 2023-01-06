@@ -1,0 +1,21 @@
+.navbar {
+	text-align: center;
+	font-size: 1.5rem;
+	width: 100%;
+	height: 50px;
+	display: flex;
+	justify-content: center;
+	position: fixed;
+	top: 0px;
+	font-family: Josefin Sans, sans-serif;
+	font-size: 20px;
+	font-weight: 200;
+	align-items: center;
+	background-color: white;
+	z-index: 1;
+}
+a {
+	text-decoration: none;
+	/* padding: 0 10px; */
+	color: black;
+}
