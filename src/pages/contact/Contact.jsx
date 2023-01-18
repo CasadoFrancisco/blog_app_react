@@ -1,7 +1,12 @@
+import styles from "./Contact.module.css";
+
+
+
+
 const Contact = () => {
   return (
-    <div>
-      <h1>estamos en Contact</h1>
+    <div className={styles.container}>
+    
     </div>
   );
 };
