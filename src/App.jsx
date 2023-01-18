@@ -1,29 +1,41 @@
-import { BrowserRouter, Route, Routes } from 'react-router-dom/dist';
-import Navbar from './components/navbar/navbar';
-import About from './pages/about/About';
-import Home from './pages/home/Home';
-import Contact from './pages/contact/Contact';
-import Write from './pages/write/Write';
-import Login from './pages/login/Login';
-import Register from './pages/register/Register';
-import './App.css';
-import PostsDetaill from './pages/postsdetaill/PostsDetaill';
+import { BrowserRouter, Route, Routes } from "react-router-dom/dist";
+import {
+  Navbar,
+  About,
+  Home,
+  Contact,
+  Write,
+  Login,
+  Register,
+  PostsDetaill,
+  Settings,
+} from "./componentes";
+import "./App.css";
+import { useState } from "react";
+import { StateContext } from "./StateContext";
 
 const App = () => {
-	return (
-		<BrowserRouter>
-			<Navbar />
-			<Routes>
-				<Route path='/' element={<Home />} />
-				<Route path='/about' element={<About />} />
-				<Route path='/contact' element={<Contact />} />
-				<Route path='/write' element={<Write />} />
-				<Route path='/login' element={<Login />} />
-				<Route path='/register' element={<Register />} />
-				<Route path='/postsdetaill/:id' element={<PostsDetaill />} />
-			</Routes>
-		</BrowserRouter>
-	);
+  const [state, setstate] = useState(true);
+  return (
+    <StateContext.Provider value={{ state, setstate }}>
+      <BrowserRouter>
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/write" element={state ? <Write /> : <Register />} />
+          <Route path="/login" element={state ? <Home /> : <Login />} />
+          <Route path="/register" element={state ? <Home /> : <Register />} />
+          <Route path="/postsdetaill/:id" element={<PostsDetaill />} />
+          <Route
+            path="/settings"
+            element={state ? <Settings /> : <Register />}
+          />
+        </Routes>
+      </BrowserRouter>
+    </StateContext.Provider>
+  );
 };
 
 export default App;

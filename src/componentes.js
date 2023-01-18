@@ -1,0 +1,9 @@
+export { default as About } from "./pages/about/About";
+export { default as Contact } from "./pages/contact/Contact";
+export { default as Home } from "./pages/home/Home";
+export { default as Login } from "./pages/login/Login";
+export { default as Navbar } from ".//components/navbar/navbar";
+export { default as PostsDetaill } from "./pages/postsdetaill/PostsDetaill";
+export { default as Register } from "./pages/register/Register";
+export { default as Settings } from "./pages/settings/Settings";
+export { default as Write } from "./pages/write/Write";
