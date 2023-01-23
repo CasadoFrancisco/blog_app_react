@@ -10,6 +10,7 @@ import {
   PostsDetaill,
   Settings,
 } from "./componentes";
+
 import "./App.css";
 import { useState } from "react";
 import { StateContext } from "./StateContext";

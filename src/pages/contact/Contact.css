@@ -1,0 +1,66 @@
+.buttonForm {
+    border: none;
+    font-family: Josefin Sans, sans-serif;
+    height: 30px;
+    margin-top: 20px;
+    transition: 1s;
+    width: 100px;
+}
+.buttonForm:hover {
+    background-color: rgb(109, 8, 8);
+    color: white;
+}
+.container {
+    align-items: center;
+    background: linear-gradient(
+            rgba(255, 255, 255, 0.5),
+            rgba(255, 255, 255, 0.5)
+        ),
+        url(https://i.pinimg.com/564x/9c/9e/79/9c9e79207648d7c7bc7e46db3bff7250.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    font-family: Josefin Sans, sans-serif;
+    height: calc(120vh - 1px);
+    justify-content: center;
+}
+.containerForm {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+.inputForm {
+    align-items: center;
+    border-color: gray;
+    background-color: white;
+    border: none;
+    border-bottom: solid 1px;
+    font-family: Josefin Sans, sans-serif;
+    height: 15px;
+    padding: 10px;
+    margin-top: 30px;
+    width: 169px;
+}
+.title {
+    font-size: 50px;
+}
+
+.textForm {
+    border: none;
+    border-color: gray;
+    border-radius: 5px;
+    font-family: Josefin Sans, sans-serif;
+    font-weight: 500;
+    height: 150px;
+    margin-top: 30px;
+    width: 300px;
+}
+.label {
+    display: flex;
+    margin-top: 20px;
+    margin-right: 140px;
+}
+.labelMessage {
+    margin-top: 20px;
+}

@@ -1,75 +1,75 @@
 i {
-  margin-top: 5px;
+    margin-top: 5px;
 }
 .icon {
-  border-radius: 50%;
-  background-color: #e76f51;
-  cursor: pointer;
-  color: white;
-  display: flex;
-  height: 30px;
-  justify-content: center;
-  margin-left: 10px;
-  width: 30px;
+    border-radius: 50%;
+    background-color: #e76f51;
+    cursor: pointer;
+    color: white;
+    display: flex;
+    height: 30px;
+    justify-content: center;
+    margin-left: 10px;
+    width: 30px;
 }
 .settings {
-  display: flex;
-  font-family: Josefin Sans, sans-serif;
-  padding-top: 50px;
+    display: flex;
+    font-family: Josefin Sans, sans-serif;
+    padding-top: 50px;
 }
 .settingsDeleteTitle {
-  cursor: pointer;
-  color: #ef233c;
-  font-size: 12px;
+    cursor: pointer;
+    color: #ef233c;
+    font-size: 12px;
 }
 .settingsTitle {
-  align-items: center;
-  display: flex;
-  justify-content: space-between;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
 }
 .settingsUpdateTitle {
-  color: brown;
-  font-size: 30px;
-  margin-bottom: 20px;
+    color: brown;
+    font-size: 30px;
+    margin-bottom: 20px;
 }
 .settingsForm {
-  display: flex;
-  flex-direction: column;
+    display: flex;
+    flex-direction: column;
 }
 .settingsForm > label {
-  font-size: 20px;
-  margin-top: 20px;
+    font-size: 20px;
+    margin-top: 20px;
 }
 .settingsForm > input {
-  border: none;
-  border-bottom: 1px solid lightgray;
-  color: gray;
-  margin: 10px 0;
-  height: 30px;
+    border: none;
+    border-bottom: 1px solid lightgray;
+    color: gray;
+    margin: 10px 0;
+    height: 30px;
 }
 .settingsPP {
-  align-items: center;
-  display: flex;
-  margin: 10px 0;
+    align-items: center;
+    display: flex;
+    margin: 10px 0;
 }
 .settingsPP > img {
-  border-radius: 10px;
-  height: 200px;
-  object-fit: cover;
-  width: 200px;
+    border-radius: 10px;
+    height: 200px;
+    object-fit: cover;
+    width: 200px;
 }
 .settingsSubmit {
-  align-self: center;
-  background-color: teal;
-  border: none;
-  border-radius: 10px;
-  color: white;
-  cursor: pointer;
-  margin-top: 20px;
-  padding: 10px;
-  width: 150px;
+    align-self: center;
+    background-color: teal;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    margin-top: 20px;
+    padding: 10px;
+    width: 150px;
 }
 .settingWrapper {
-  flex: 4;
-  padding: 20px;
+    flex: 4;
+    padding: 20px;
 }
