@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Cousine&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cousine&family=Playfair+Display:wght@800&display=swap");
+
+.containerPostDetaill {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-family: Varela Round, Arial, Helvetica, sans-serif;
+    background-color: #f4f3ee;
+    height: 120vh;
+    width: 100%;
+}
+.containerPostDetaillPage {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    margin-right: 10px;
+}
+.containerImag {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+.imgPostDeataill {
+    height: 800px;
+    width: 800px;
+    border-radius: 10px;
+    border-radius: 10px;
+}
+.containerTime {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+    height: 40px;
+    width: 300px;
+    justify-content: space-between;
+    color: brown;
+}
+.datePostDetaill {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.containerUrlPostDetaill {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 50px;
+    width: 600px;
+}
+.parrafoTimePostDetaill {
+    margin-top: 50px;
+}
+.buttonPostDetaill {
+    align-items: center;
+    background-color: transparent;
+    color: rgb(2, 2, 2);
+    cursor: pointer;
+    display: flex;
+    font-family: ui-sans-serif, system-ui, -apple-system, system-ui, "Segoe UI",
+        Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
+        "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+        "Noto Color Emoji";
+    font-size: 1rem;
+    font-weight: 630;
+    line-height: 1.5;
+    text-decoration: none;
+    text-transform: uppercase;
+    outline: 0;
+    border: solid 1px rgb(213, 213, 234);
+    padding: 1rem;
+    border-radius: 10px;
+    transition: 2s;
+    margin-top: 20px;
+}
+.buttonPostDetaill:hover {
+    background-color: #dda15e;
+    color: white;
+}
+.buttonPostDetaill:before {
+    background-color: rgb(10, 6, 6);
+    content: "";
+    display: inline-block;
+    height: 1px;
+    margin-right: 10px;
+    transition: all 0.42s cubic-bezier(0.25, 0.8, 0.25, 1);
+    width: 0;
+}
+
+.buttonPostDetaill:hover:before {
+    background-color: rgb(22, 9, 9);
+    width: 3rem;
+}
+
+.containerInfoPostDeatill {
+    flex: 2;
+    height: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.containerInfoDetaill {
+    margin-top: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 60%;
+}
+.titlePostDetaill {
+    width: 70%;
+    font-size: 45px;
+    color: rgb(58, 40, 17);
+    font-family: "Cousine", monospace;
+    font-weight: 200;
+    width: 700px;
+}
+.titlePostDetaill::first-letter {
+    font-size: 60px;
+    color: #b79a7a;
+    font-weight: 800;
+}
+.urlPostDetaill {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.parrafoPostDetaill {
+    height: 200px;
+    width: 900px;
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

@@ -18,7 +18,7 @@ const NavbarRight = () => {
           </Link>
           <button className={styles.icons} onClick={() => setstate(!state)}>
             {" "}
-            <i class="fa-solid fa-right-from-bracket"></i>{" "}
+            <i className="fa-solid fa-right-from-bracket"></i>{" "}
           </button>
           <div className={styles.iconLogin}>
             <i className="fa-solid fa-magnifying-glass"></i>

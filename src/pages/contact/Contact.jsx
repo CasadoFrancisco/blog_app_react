@@ -53,7 +53,7 @@ const Contact = () => {
     }
 
     return (
-        <div class="container">
+        <div className="container">
             <label className="title">CONTACT</label>
             <form
                 ref={formRef}
@@ -69,6 +69,7 @@ const Contact = () => {
                     onChange={(e) => setName(e.target.value)}
                     onBlur={checkForm}
                     value={name}
+                    required
                 />
                 <label className="label">Subject</label>
                 <input
@@ -79,6 +80,7 @@ const Contact = () => {
                     onChange={(e) => setSubject(e.target.value)}
                     onBlur={checkForm}
                     value={subject}
+                    required
                 />
                 <label className="label">Email</label>
                 <input
@@ -88,8 +90,9 @@ const Contact = () => {
                     name="user_email"
                     onChange={(e) => setEmail(e.target.value)}
                     value={email}
+                    required
                 />
-                <spam className="labelMessage">Message</spam>
+                <span className="labelMessage">Message</span>
                 <textarea
                     rows="5"
                     className="textForm"
@@ -98,13 +101,14 @@ const Contact = () => {
                     onChange={(e) => setMessage(e.target.value)}
                     onBlur={checkForm}
                     value={message}
+                    required
                 />
                 <button
                     className="buttonForm"
                     type="submit"
                     disabled={!formCompleted}
                 >
-                    Submit <i class="fa-regular fa-paper-plane"></i>
+                    Submit <i className="fa-regular fa-paper-plane"></i>
                 </button>
                 <label className="gratitude">
                     {done && "thank your for masssage"}

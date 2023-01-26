@@ -1,6 +1,9 @@
 import styles from "./Register.module.css";
+import { useContext } from "react";
+import { StateContext } from "../../StateContext";
 
 const Register = () => {
+    const { state, setstate } = useContext(StateContext);
     return (
         <div className={styles.container}>
             <span className={styles.registerTitle}>REGISTER</span>
@@ -23,7 +26,12 @@ const Register = () => {
                     className={styles.registerInput}
                     placeholder="enter your password..."
                 />
-                <button className={styles.registerButton}>register</button>
+                <button
+                    className={styles.registerButton}
+                    onClick={() => setstate(!state)}
+                >
+                    register
+                </button>
             </form>
             <button className={styles.registerLoginButton}>Login</button>
         </div>
