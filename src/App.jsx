@@ -10,15 +10,40 @@ import {
   PostsDetaill,
   Settings,
 } from "./componentes";
-
 import "./App.css";
 import { useState } from "react";
 import { StateContext } from "./StateContext";
+import { useEffect } from "react";
+import { get } from "./utilities/Get";
 
 const App = () => {
-  const [state, setstate] = useState(true);
+  const [state, setstate] = useState(false);
+  const [news, setNews] = useState([]);
+  const [category, setcategory] = useState("all");
+  const [search, setSearch] = useState(false);
+
+  useEffect(() => {
+    setNews([]);
+    get(category)
+      .then((data) => {
+        setNews(data.data);
+      })
+      .catch((error) => console.log("algo paso:" + error));
+  }, [category]);
+
   return (
-    <StateContext.Provider value={{ state, setstate }}>
+    <StateContext.Provider
+      value={{
+        state,
+        setstate,
+        category,
+        setcategory,
+        news,
+        setNews,
+        search,
+        setSearch,
+      }}
+    >
       <BrowserRouter>
         <Navbar />
         <Routes>

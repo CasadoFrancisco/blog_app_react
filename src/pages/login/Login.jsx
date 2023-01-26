@@ -1,6 +1,9 @@
 import styles from "./Login.module.css";
+import { useContext } from "react";
+import { StateContext } from "../../StateContext";
 
 const Login = () => {
+    const { state, setstate } = useContext(StateContext);
     return (
         <div className={styles.container}>
             <span className={styles.loginTitle}>LOGIN</span>
@@ -17,7 +20,12 @@ const Login = () => {
                     className={styles.loginInput}
                     placeholder="enter your password..."
                 />
-                <button className={styles.loginButton}>Login</button>
+                <button
+                    className={styles.loginButton}
+                    onClick={() => setstate(!state)}
+                >
+                    Login
+                </button>
             </form>
             <button className={styles.loginRegisterButton}>Register</button>
         </div>

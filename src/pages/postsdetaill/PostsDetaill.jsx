@@ -1,31 +1,50 @@
 // import Sidebar from "../../components/sidebar/Sidebar";
-// import PostDetail from "../../components/postdetail/PostDetail";
-import styles from "./PostsDetaill.module.css";
+
+import "./PostsDetaill.css";
 import { useParams } from "react-router-dom";
-import data from "../../constants/posts.json";
-import Sidebar from "../../components/sidebar/Sidebar";
+import { useContext, useState } from "react";
+import { StateContext } from "../../StateContext";
 
 const PostsDetaill = () => {
     const { id } = useParams();
+    const { news } = useContext(StateContext);
+    const [state] = useState(news.filter((object) => object.id === id));
+    console.log(state);
 
     return (
-        <div className={styles.container}>
-            <div className={styles.detail}>
-                <div className={styles.entremedio}>
-                    <img className={styles.image} src={data[id].image} />
-                    <h1 className={styles.title}>{data[id].title}</h1>
-                    <div className={styles.detail}>
-                        <span>author:{data[id].author}</span>
-                        <span>{data[id].time}</span>
-                    </div>
-                    <p className={styles.parrafo}>{data[id].overview}</p>
-                    <br />
-                    <br />
-                    <p className={styles.parrafo}>{data[id].overview}</p>
+        <div className="containerPostDetaill">
+            <div className="containerPostDetaillPage">
+                <div className="containerImag">
+                    <img className="imgPostDeataill" src={state[0].imageUrl} />
+                </div>
+
+                <div className="containerTime">
+                    <span className="datePostDetaill">{state[0].date}</span>
+                    <span className="datePostDetaill">{state[0].time}</span>
+                </div>
+                <div className="containerUrlPostDetaill">
+                    <p className="parrafoTimePostDetaill">
+                        Clicking here, will take you to the page where the
+                        publication was made.....
+                    </p>
+                    <a href={state[0].url}>
+                        <button className="buttonPostDetaill">
+                            click here to redirect
+                        </button>
+                    </a>
                 </div>
             </div>
-            <div className={styles.sidebar}>
-                <Sidebar />
+            <div className="containerInfoPostDeatill">
+                <div className="containerInfoDetaill">
+                    <h1 className="titlePostDetaill">{state[0].title}</h1>
+                    <p className="parrafoPostDetaill">{state[0].content}</p>
+                    <a className="urlPostDetaill" href={state[0].readMoreUrl}>
+                        <button className="buttonPostDetaill">
+                            {" "}
+                            more detaills
+                        </button>
+                    </a>
+                </div>
             </div>
         </div>
     );

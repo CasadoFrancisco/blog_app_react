@@ -1,21 +1,21 @@
 .navbar {
-  text-align: center;
-  font-size: 1.5rem;
-  width: 100%;
-  height: 50px;
-  display: flex;
-  justify-content: center;
-  position: fixed;
-  top: 0px;
+  align-items: center;
+  background-color: white;
+  border-bottom: solid 1px rgb(212, 207, 207);
   font-family: Josefin Sans, sans-serif;
   font-size: 20px;
   font-weight: 200;
-  align-items: center;
-  background-color: white;
+  font-size: 1.5rem;
+  height: 50px;
+  justify-content: center;
+  position: fixed;
+  text-align: center;
+  width: 100%;
+  display: flex;
+  top: 0px;
   z-index: 1;
 }
 a {
   text-decoration: none;
-  /* padding: 0 10px; */
   color: black;
 }

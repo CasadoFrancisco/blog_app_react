@@ -5,11 +5,11 @@ const Hero = () => {
     <div className={styles.container}>
       <div className={styles.words}>
         <span className={styles.titleSmall}>React & Node</span>
-        <span className={styles.titleLarge}>BLOG</span>
+        <span className={styles.titleLarge}>NEWS</span>
       </div>
       <img
         className={styles.image}
-        src="https://images.pexels.com/photos/1167355/pexels-photo-1167355.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+        src="https://media.cdn.eldestapeweb.com/eldestape/032021/1617121909540/soldados_argentinos_guerra_islas_malvinas.webp?cw=1280&ch=720&extw=jpg"
         alt=""
       />
     </div>

@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Dongle:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Hind+Siliguri&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap");
+.aboutMe {
+    font-family: "Hind Siliguri", sans-serif;
+    font-size: 25px;
+    font-weight: 300px;
+}
+.containerAbout {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    width: 100%;
+}
+.containerInfoAbout {
+    align-items: center;
+    background-color: #faedcd;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgb(99, 95, 95);
+    display: flex;
+    flex-direction: column;
+    height: 700px;
+    justify-content: center;
+    width: 600px;
+    -webkit-box-shadow: 0px 0px 10px rgb(99, 95, 95);
+    -moz-box-shadow: 0px 0px 10px rgb(99, 95, 95);
+}
+.containerImgAbout {
+    align-items: center;
+    display: flex;
+    height: 50%;
+    justify-content: center;
+}
+.imgAbout {
+    border-radius: 50%;
+    box-shadow: 0px 0px 60px rgb(99, 95, 95);
+    height: 350px;
+    width: 350px;
+    -webkit-box-shadow: 0px 0px 60px rgb(99, 95, 95);
+    -moz-box-shadow: 0px 0px 60px rgb(99, 95, 95);
+}
+.containerNameAbout {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    justify-content: space-evenly;
+    width: 490px;
+}
+.NameAbout {
+    align-items: center;
+    color: #3a2d1f;
+    display: flex;
+    flex: 1;
+    font-family: "Dongle", sans-serif;
+    font-size: 40px;
+    justify-content: center;
+}
+
+.AboutMe {
+    color: rgb(70, 63, 63);
+    flex: 2;
+    font-size: 22px;
+    font-family: "Quicksand", sans-serif;
+    font-weight: bold;
+}
+.containerSocialAbout {
+    align-items: center;
+    display: flex;
+    height: 30px;
+    justify-content: space-around;
+    width: 200px;
+}
+.icon {
+    font-size: 35px;
+    margin-top: 40px;
+}

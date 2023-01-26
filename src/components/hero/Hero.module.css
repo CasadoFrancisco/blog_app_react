@@ -1,22 +1,26 @@
 .container {
   align-items: center;
   display: flex;
+  font-family: Josefin Sans, sans-serif;
   justify-content: center;
-  margin-top: 190px;
+  margin-top: 90px;
   position: relative;
 }
 
 .image {
-  height: 450px;
+  height: 500px;
   object-fit: cover;
   width: 100%;
 }
 
 .titleSmall {
+  color: rgb(213, 203, 203);
+  margin-top: 40px;
   font-size: 20px;
 }
 
 .titleLarge {
+  color: rgb(154, 66, 66);
   font-size: 100px;
 }
 
