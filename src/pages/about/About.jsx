@@ -1,5 +1,5 @@
 import "./About.css";
-import miImagen from "../../img/foto.jpg";
+import Imag from "../../img/foto.jpg";
 
 const About = () => {
     return (
@@ -7,7 +7,7 @@ const About = () => {
             <p className="aboutMe">ABOUT ME</p>
             <div className="containerInfoAbout">
                 <div className="containerImgAbout">
-                    <img className="imgAbout" src={miImagen} alt="mi imagen" />
+                    <img className="imgAbout" src={Imag} alt="mi imagen" />
                 </div>
                 <div className="containerNameAbout">
                     <h2 className="NameAbout">Francisco Casado Romero</h2>
